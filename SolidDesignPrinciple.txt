@@ -1,0 +1,8 @@
+Solid design principles are a set of design principles related to software design.
+This princiles frequetly preffered in modern design patter.
+
+1. Sinlgle responsiblity principle
+2. Open-Closed Principles
+3. Liskov Substitution Principles
+4. Interface segregation principles
+5. Dependency inversion principle
