@@ -1,0 +1,18 @@
+Sinlgle responsiblity principle states that a class should have only single reason to change.
+In other words a class should have a primary responsibility and it should not take up other responsibilities.
+
+So let's suppose that you decide to make a journal class you decided to make a class for replicating a journo and storing your most intimate thoughts.
+
+Note:
+check code /users/e468208/Dev/DesignPrinciples/SRC_Journal.cpp
+
+In journal class has only one responsiplity to add entry rest will be done by other class func. like save entries into a file.
+If Journal class would have both function add and save which are totally different to each others then this class would responsible for both functinality.
+In this following concern would occurs:
+
+1. let's imagine if journal class is using by 10 other classes and add function require changes 5 times in a year while save func. require 4 timeschanges in the year that mean total 10*5 + 10*4 = 90 changes in a year. Because all the classes which were associated with the journal class would be effected when changes would be done in either add or save function.
+
+2. Now let's assume if I make seprate class PersistenceManager for save entries in a file as in the code. And assume total 6 claases are associate with Journal class and 4 class associate with PersistenceManager class. Then In this case
+total changes required in a year would be:
+
+6*5 + 4*4 = 46 changes only require in a year.
