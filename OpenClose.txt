@@ -1,0 +1,1 @@
+This principle state that system or program should be open for extension( extend sys. by inheritence ) but close for modification.
